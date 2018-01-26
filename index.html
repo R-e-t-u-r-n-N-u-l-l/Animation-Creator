@@ -8,4 +8,17 @@
   <canvas>
   </canvas>
 </body>
+<script>
+var sr = new SyntaxReader(new File('../syntax.txt'));
+
+while(sr.nextBlock())
+  sr.execCommands();
+
+function move(x, y) {
+  console.log(x, y);
+}
+function delay(t) {
+  console.log(t)
+}
+</script>
 </html>
