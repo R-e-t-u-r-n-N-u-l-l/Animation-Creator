@@ -1,0 +1,10 @@
+:root {
+  --bg-color: #111;
+}
+
+canvas {
+  background-color: var(--bg-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
