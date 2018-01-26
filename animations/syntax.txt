@@ -1,0 +1,38 @@
+//Syntax for all currently supported functions
+
+//Wait for the given amount of milliseconds
+delay(ms)
+
+//Set the current fill color
+fillColor(color)
+
+//Set the current stroke color
+strokeColor(color)
+
+//Set the current stroke width
+strokeWidth(strokeWidth)
+
+//Draw a stroked rectangle at (x, y) with the given width and height
+strokeRect(x, y, width, height)
+
+//Draw a filled rectangle at (x, y) with the given width and height
+fillRect(x, y, width, height)
+
+//Draw a stroked circle with the middle at (cx, cy) and with the given radius
+//The startAngle and endAngle are optional
+strokeCircle(cx, cy, r, sAngle = 0, eAngle = 2 * Math.PI)
+
+//Draw a filled circle with the middle at (cx, cy) and with the given radius
+//The startAngle and endAngle are optional
+fillCircle(cx, cy, r, sAngle = 0, eAngle = 2 * Math.PI)
+
+//Draw a stroked ellipse with the middle at (cx, cy) and with the given radius x and radius y
+//The startAngle and endAngle are optional
+strokeEllipse(cx, cy, rx, ry, angle, sAngle = 0, eAngle = 2 * Math.PI)
+
+//Draw a filled ellipse with the middle at (cx, cy) and with the given radius x and radius y
+//The startAngle and endAngle are optional
+fillEllipse(cx, cy, rx, ry, angle, sAngle = 0, eAngle = 2 * Math.PI)
+
+//Draw a line from (x1, y1) to (x2, y2)
+line(x1, y1, x2, y2)
