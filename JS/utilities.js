@@ -1,8 +1,5 @@
 function delay(ms) {
-  cancelAnimationFrame();
-  setTimeout(function() {
-    requestAnimationFrame(update);
-  }, ms);
+  return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 function fillColor(color) {
