@@ -49,7 +49,7 @@ class Geometry {
     this.opacity = opacity;
   }
 
-  moveTo() {
+  moveTo(x, y) {
     this.x = x;
     this.y = y;
   }
