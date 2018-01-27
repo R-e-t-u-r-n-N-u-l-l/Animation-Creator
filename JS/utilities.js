@@ -13,3 +13,7 @@ function strokeColor(color) {
 function strokeWidth(strokeWidth) {
   ctx.lineWidth = strokeWidth;
 }
+
+function lerp(from, to, percentage) {
+  return (1 - percentage) * from + percentage * to;
+}
