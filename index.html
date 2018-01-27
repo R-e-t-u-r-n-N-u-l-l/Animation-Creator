@@ -1,7 +1,11 @@
 <!doctype HTML>
 <html>
 <head>
+  <script src="JS/shapes.js"></script>
+  <script src="JS/utilities.js"></script>
+  <script src="JS/syntax.js"></script>
   <script src="JS/main.js"></script>
+  <script src="JS/animation.js"></script>
   <link href="style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
@@ -9,16 +13,10 @@
   </canvas>
 </body>
 <script>
-var sr = new SyntaxReader(new File('../syntax.txt'));
+var sr = new SyntaxReader(new File('../animation.txt'));
 
 while(sr.nextBlock())
   sr.execCommands();
 
-function move(x, y) {
-  console.log(x, y);
-}
-function delay(t) {
-  console.log(t)
-}
 </script>
 </html>
